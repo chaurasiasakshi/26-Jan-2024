@@ -19,16 +19,24 @@
     <p>The tricolor flag is unfurled by the President of India at the<strong> Kartavya Path (Raj Path), New Delhi.</strong> </p>
     <p>Theme of the parade is <strong> ‘Viksit Bharat’ and India – The Mother of Democracy</strong></p>
     </div></marquee>
-    <audio  autoplay loop>
-        <source src="Vande-Mataram.mp3"  type="audio/mp3">
-    </audio>
+    
       <div class="container ">
         <div></div>
         <div></div>
         <div></div>
-        <img src="ASHOK CHAKRA.png" alt="ASHOK CHAKRA">
+        <img src="ASHOK CHAKRA.png" alt="ASHOK CHAKRA" id="play" onmouseover="playmusic(this)">
       </div>
-
+      
+      <script>
+        let play = document.getElementsByName("play");
+        function playmusic(x){
+          let audio = new Audio("Vande-Mataram.mp3");
+          audio.play()
+        }
+        play.addEventListerner("onmouseover",function(){
+          playmusic(play);
+        });
+      </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
