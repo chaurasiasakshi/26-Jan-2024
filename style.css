@@ -29,7 +29,7 @@ img{
     position: absolute;
     width: 180px;
     left:52%;
-    top:55%;
+    top:50%;
 
     transform: translate(-50% , -50%);
     animation: round 2s infinite linear ;
